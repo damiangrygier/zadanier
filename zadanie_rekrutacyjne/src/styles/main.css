@@ -1,0 +1,11 @@
+.app {
+  overflow: hidden;
+}
+
+#app {
+  background: #fff;
+}
+
+body {
+  margin: 0;
+}

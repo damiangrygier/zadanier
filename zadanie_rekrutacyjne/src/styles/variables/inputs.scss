@@ -1,0 +1,55 @@
+@mixin textInput {
+    border: 1px solid $cl-border;
+    border-radius: 8px;
+    width: 100%;
+    background: none;
+    padding: 15px;
+    box-sizing: border-box;
+    color: $cl-title;
+  
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $cl-subtitle;
+      opacity: 1; /* Firefox */
+    }
+  
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $cl-subtitle;
+    }
+  
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: $cl-subtitle;
+    }
+  }
+  
+  @mixin formElement {
+    position: relative;
+    margin-bottom: 20px;
+  
+    label {
+      text-align: left;
+      margin-bottom: 5px;
+      color: $cl-title;
+      display: block;
+    }
+  }
+
+  @mixin buttonSign {
+      width: 100%;
+      height: 50px;
+      margin-top: 30px;
+      background: $cl-color-3;
+      color: $cl-title;
+      border: 1px solid $cl-border;
+      border-radius: 8px;
+    }
+
+  @mixin errorInputs {
+    border: 1px solid $cl-color-4;
+  }
+
+  @mixin errorInputsInfo {
+    color: $cl-color-4;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  

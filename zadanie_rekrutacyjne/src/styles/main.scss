@@ -1,0 +1,15 @@
+@import './variables/colors';
+@import './variables/breakpoints';
+@import './variables/inputs';
+
+.app {
+  overflow: hidden;
+}
+
+#app {
+  background: $cl-bg-primary;
+}
+
+body {
+  margin: 0;
+}
